@@ -56,6 +56,7 @@
             </e>
           </e>
         </e>
+        <e p="PollutionDbContext.cs" t="Include" />
         <e p="Sedre.Pollution.Infrastructure.csproj" t="IncludeRecursive" />
       </e>
     </e>
