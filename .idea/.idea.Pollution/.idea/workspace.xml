@@ -7,12 +7,7 @@
     <projectFile>Sedre.Pollution.Infrastructure/Sedre.Pollution.Infrastructure.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="445fcafd-1c56-4238-9e1e-47520b6aeafc" name="Default Changelist" comment="Init3">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/PollutionDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/PollutionDbContext.cs" afterDir="false" />
-    </list>
+    <list default="true" id="445fcafd-1c56-4238-9e1e-47520b6aeafc" name="Default Changelist" comment="framework" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,6 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1630216119603</updated>
       <workItem from="1630216137967" duration="1558000" />
+      <workItem from="1630248935523" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="Init2">
       <created>1630217225332</created>
@@ -186,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630217322600</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="framework">
+      <created>1630248976070</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1630248976070</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +201,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init2" />
     <MESSAGE value="Init3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init3" />
+    <MESSAGE value="framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="framework" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2152" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1630216291620">
