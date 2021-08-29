@@ -7,7 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Sedre.Pollution.Domain.Interfaces;
 using Sedre.Pollution.Infrastructure;
+using Sedre.Pollution.Infrastructure.Implementations;
 
 namespace Sedre.Pollution.Api
 {
@@ -32,9 +34,9 @@ namespace Sedre.Pollution.Api
             services.AddDbContext<PollutionDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("Pollution")));
             
-            // services.AddScoped<IUnitOfWork>(provider => provider.GetService<PollutionDbContext>());
-            // services.AddScoped<DbContext>(provider => provider.GetService<PollutionDbContext>());
-            // services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
+            services.AddScoped<IUnitOfWork>(provider => provider.GetService<PollutionDbContext>());
+            services.AddScoped<DbContext>(provider => provider.GetService<PollutionDbContext>());
+            services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 
             services.AddCors(options =>
             {

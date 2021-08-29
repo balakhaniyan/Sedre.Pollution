@@ -10,6 +10,7 @@
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="ExceptionHandlingMiddleware.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="net5.0" t="Include">
@@ -38,6 +39,21 @@
       </e>
       <e p="Sedre.Pollution.Domain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Implementations" t="Include">
+          <e p="Comb.cs" t="Include" />
+          <e p="Entity.cs" t="Include" />
+          <e p="PersianDateTimeHelper.cs" t="Include" />
+          <e p="TrackableEntity.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="AndSpecification.cs" t="Include" />
+          <e p="IEntity.cs" t="Include" />
+          <e p="IRepository.cs" t="Include" />
+          <e p="ISoftDeletable.cs" t="Include" />
+          <e p="ITrackableEntity.cs" t="Include" />
+          <e p="IUnitOfWork.cs" t="Include" />
+          <e p="Specification.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.1" t="Include">
@@ -49,6 +65,11 @@
       </e>
       <e p="Sedre.Pollution.Infrastructure" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Implementations" t="Include">
+          <e p="DbContextBase.cs" t="Include" />
+          <e p="EfRepository.cs" t="Include" />
+          <e p="SpecificationEvaluator.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.1" t="Include">
