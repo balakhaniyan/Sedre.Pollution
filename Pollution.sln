@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sedre.Pollution.Api", "Sedre.Pollution.Api\Sedre.Pollution.Api.csproj", "{DB9F627C-5C32-4C4B-BD9B-FCCFE9A6E203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sedre.Pollution.Application", "Sedre.Pollution.Application\Sedre.Pollution.Application.csproj", "{49173A26-88D4-446A-8CF3-8A1C07C52423}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sedre.Pollution.Domain", "Sedre.Pollution.Domain\Sedre.Pollution.Domain.csproj", "{75F056A7-A299-447D-B050-638CC52CA347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sedre.Pollution.Infrastructure", "Sedre.Pollution.Infrastructure\Sedre.Pollution.Infrastructure.csproj", "{FD12DEBF-1506-4421-91BE-A84197CC9156}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB9F627C-5C32-4C4B-BD9B-FCCFE9A6E203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB9F627C-5C32-4C4B-BD9B-FCCFE9A6E203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB9F627C-5C32-4C4B-BD9B-FCCFE9A6E203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB9F627C-5C32-4C4B-BD9B-FCCFE9A6E203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49173A26-88D4-446A-8CF3-8A1C07C52423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49173A26-88D4-446A-8CF3-8A1C07C52423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49173A26-88D4-446A-8CF3-8A1C07C52423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49173A26-88D4-446A-8CF3-8A1C07C52423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F056A7-A299-447D-B050-638CC52CA347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F056A7-A299-447D-B050-638CC52CA347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F056A7-A299-447D-B050-638CC52CA347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F056A7-A299-447D-B050-638CC52CA347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD12DEBF-1506-4421-91BE-A84197CC9156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD12DEBF-1506-4421-91BE-A84197CC9156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD12DEBF-1506-4421-91BE-A84197CC9156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD12DEBF-1506-4421-91BE-A84197CC9156}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
