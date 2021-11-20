@@ -3188,10 +3188,55 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "BuildingBlocks.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "BuildingBlocks.Infrastructure": "1.0.0",
+          "Humanizer.Core.fa": "2.8.26",
+          "Microsoft.AspNetCore.Mvc": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/BuildingBlocks.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildingBlocks.Application.dll": {}
+        }
+      },
+      "BuildingBlocks.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/BuildingBlocks.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildingBlocks.Domain.dll": {}
+        }
+      },
+      "BuildingBlocks.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "BuildingBlocks.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BuildingBlocks.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildingBlocks.Infrastructure.dll": {}
+        }
+      },
       "Sedre.Pollution.Application/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "BuildingBlocks.Application": "1.0.0",
+          "BuildingBlocks.Infrastructure": "1.0.0",
           "Humanizer.Core.fa": "2.8.26",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Sedre.Pollution.Infrastructure": "1.0.0"
@@ -3208,6 +3253,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
+          "BuildingBlocks.Domain": "1.0.0",
           "JetBrains.Annotations": "2021.1.0-eap01"
         },
         "compile": {
@@ -3221,6 +3267,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "BuildingBlocks.Domain": "1.0.0",
+          "BuildingBlocks.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
           "Sedre.Pollution.Domain": "1.0.0"
@@ -9796,6 +9844,21 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "BuildingBlocks.Application/1.0.0": {
+      "type": "project",
+      "path": "../BuildingBlocks/BuildingBlocks.Application/BuildingBlocks.Application.csproj",
+      "msbuildProject": "../BuildingBlocks/BuildingBlocks.Application/BuildingBlocks.Application.csproj"
+    },
+    "BuildingBlocks.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BuildingBlocks/BuildingBlocks.Domain/BuildingBlocks.Domain.csproj",
+      "msbuildProject": "../BuildingBlocks/BuildingBlocks.Domain/BuildingBlocks.Domain.csproj"
+    },
+    "BuildingBlocks.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../BuildingBlocks/BuildingBlocks.Infrastructure/BuildingBlocks.Infrastructure.csproj",
+      "msbuildProject": "../BuildingBlocks/BuildingBlocks.Infrastructure/BuildingBlocks.Infrastructure.csproj"
+    },
     "Sedre.Pollution.Application/1.0.0": {
       "type": "project",
       "path": "../Sedre.Pollution.Application/Sedre.Pollution.Application.csproj",
@@ -9825,40 +9888,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\b.dara\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Behzad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\b.dara\\Desktop\\Sedre\\Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj",
       "projectName": "Sedre.Pollution.Api",
-      "projectPath": "C:\\Users\\b.dara\\Desktop\\Sedre\\Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj",
-      "packagesPath": "C:\\Users\\b.dara\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\b.dara\\Desktop\\Sedre\\Pollution\\Sedre.Pollution.Api\\obj\\",
+      "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj",
+      "packagesPath": "C:\\Users\\Behzad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\b.dara\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Behzad\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://myget.org/F/graphql-dotnet/api/v3/index.json": {},
         "https://nuget.sarmadins.ir/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\b.dara\\Desktop\\Sedre\\Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj": {
-              "projectPath": "C:\\Users\\b.dara\\Desktop\\Sedre\\Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj"
+            "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj": {
+              "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj"
             }
           }
         }

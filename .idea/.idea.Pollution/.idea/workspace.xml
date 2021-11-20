@@ -7,7 +7,229 @@
     <projectFile>Sedre.Pollution.Infrastructure/Sedre.Pollution.Infrastructure.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="445fcafd-1c56-4238-9e1e-47520b6aeafc" name="Default Changelist" comment="framework" />
+    <list default="true" id="445fcafd-1c56-4238-9e1e-47520b6aeafc" name="Default Changelist" comment="framework">
+      <change afterPath="$PROJECT_DIR$/BuildingBlocks/BuildingBlocks.Application/Contracts/DocumentDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/PollutionProfile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/AutoMapper.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/BuildingBlocks.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/BuildingBlocks.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/BuildingBlocks.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/BuildingBlocks.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/BuildingBlocks.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/BuildingBlocks.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Humanizer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/JetBrains.Annotations.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/MediatR.Extensions.Microsoft.DependencyInjection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/MediatR.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.AspNetCore.Razor.Language.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.CodeAnalysis.Razor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.CodeAnalysis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.Data.SqlClient.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.DotNet.PlatformAbstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.SqlServer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.Identity.Client.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Microsoft.OpenApi.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Api.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Api.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Api.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Api.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Api.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Api.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Sedre.Pollution.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/System.Runtime.Caching.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/fa/Humanizer.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/ref/Sedre.Pollution.Api.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.RazorTargetAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/apphost.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/ref/Sedre.Pollution.Api.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/staticwebassets/Sedre.Pollution.Api.StaticWebAssets.Manifest.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/staticwebassets/Sedre.Pollution.Api.StaticWebAssets.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Sedre.Pollution.Api.csproj.EntityFrameworkCore.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/AllDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/BaseIndicatorDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/CoDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/EnumDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/LastUiDataDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/LastUiDataDtoOutput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/No2Dto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/O3Dto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/Pm10Dto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/Pm25Dto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/So2Dto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/UiIndicatorDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Services/PollutionAppService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/BuildingBlocks.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/BuildingBlocks.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/BuildingBlocks.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/BuildingBlocks.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/BuildingBlocks.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/BuildingBlocks.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/Sedre.Pollution.Application.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/Sedre.Pollution.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/Sedre.Pollution.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/Sedre.Pollution.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/Sedre.Pollution.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/bin/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/.NETStandard,Version=v2.1.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/Enums/IndicatorType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/Formula.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/Models/Indicator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/ProxyServices/Dto/AiIndicatorDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/ProxyServices/Dto/LastAiDataDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/ProxyServices/IAiInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/Specifications/ExistSpecification.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/Statics/Error.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/bin/Debug/netstandard2.1/BuildingBlocks.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/bin/Debug/netstandard2.1/BuildingBlocks.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/bin/Debug/netstandard2.1/Sedre.Pollution.Domain.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/bin/Debug/netstandard2.1/Sedre.Pollution.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/bin/Debug/netstandard2.1/Sedre.Pollution.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Migrations/20211120135958_Init.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Migrations/20211120135958_Init.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Migrations/PollutionDbContextModelSnapshot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Proxies/AiInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/bin/Debug/netstandard2.1/BuildingBlocks.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/bin/Debug/netstandard2.1/BuildingBlocks.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/bin/Debug/netstandard2.1/BuildingBlocks.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/bin/Debug/netstandard2.1/BuildingBlocks.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/bin/Debug/netstandard2.1/Sedre.Pollution.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/bin/Debug/netstandard2.1/Sedre.Pollution.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/bin/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/bin/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/bin/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Sedre.Pollution.Infrastructure.csproj.EntityFrameworkCore.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pollution.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Pollution.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/Sedre.Pollution.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/Sedre.Pollution.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/Sedre.Pollution.Api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/Sedre.Pollution.Api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Sedre.Pollution.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Sedre.Pollution.Api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Sedre.Pollution.Api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Sedre.Pollution.Api.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/Sedre.Pollution.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/Sedre.Pollution.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Sedre.Pollution.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Sedre.Pollution.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Sedre.Pollution.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Sedre.Pollution.Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Implementations/Comb.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Implementations/Entity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Implementations/PersianDateTimeHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Implementations/TrackableEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/AndSpecification.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/IEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/IRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/ISoftDeletable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/ITrackableEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/IUnitOfWork.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/Specification.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Sedre.Pollution.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/Sedre.Pollution.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Debug/netstandard2.1/Sedre.Pollution.Domain.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Sedre.Pollution.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Sedre.Pollution.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Sedre.Pollution.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/Sedre.Pollution.Domain.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Implementations/DbContextBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Implementations/EfRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Implementations/SpecificationEvaluator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/PollutionDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/PollutionDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Sedre.Pollution.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Sedre.Pollution.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/net472/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/net472/Sedre.Pollution.Infrastructure.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/net472/Sedre.Pollution.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/net472/Sedre.Pollution.Infrastructure.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/net472/Sedre.Pollution.Infrastructure.exe.withSupportedRuntime.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Debug/netstandard2.1/Sedre.Pollution.Infrastructure.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Sedre.Pollution.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Sedre.Pollution.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Sedre.Pollution.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/Sedre.Pollution.Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,40 +245,56 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Program.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Program.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Program.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Api/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Api/appsettings.json" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Api/appsettings.Development.json" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Api/Program.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Api/Sedre.Pollution.Api.xml" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Sedre.Pollution.Application.csproj" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Sedre.Pollution.Domain.csproj" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Sedre.Pollution.Infrastructure.csproj" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Api/Sedre.Pollution.Api.csproj" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Implementations/Entity.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Implementations/PersianDateTimeHelper.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/AndSpecification.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/IEntity.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/IRepository.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/ISoftDeletable.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/IUnitOfWork.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/Specification.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Implementations/DbContextBase.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Implementations/EfRepository.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Implementations/SpecificationEvaluator.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/PollutionDbContext.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Api/Startup.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Api/ExceptionHandlingMiddleware.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Implementations/Comb.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Implementations/TrackableEntity.cs" />
-        <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Interfaces/ITrackableEntity.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Sedre.Pollution.Application.csproj" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Sedre.Pollution.Domain.csproj" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Program.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Sedre.Pollution.Infrastructure.csproj" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/PollutionDbContext.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/ProxyServices/Dto/LastAiDataDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/ProxyServices/Dto/AiIndicatorDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/ProxyServices/IAiInfo.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Services/PollutionService.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Enums/IndicatorType.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Infrastructure/Proxies/AiInfo.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Models/Indicator.cs" />
+      <option value="$PROJECT_DIR$/BuildingBlocks/BuildingBlocks.Domain/Interfaces/IRepository.cs" />
+      <option value="$PROJECT_DIR$/BuildingBlocks/BuildingBlocks.Infrastructure/Implementations/EfRepository.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Specifications/ExistSpecification.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Statics/Error.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Api/Startup.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/IndicatorDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/LastDataDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/EnumDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Comb.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Formula.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/CoDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/No2Dto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/O3Dto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/Pm10Dto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/Pm25Dto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/So2Dto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Api/PollutionProfile.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/AllDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/BaseIndicatorDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/UiIndicatorDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/LastUiDataDto.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/LastUiDataDtoOutput.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Services/PollutionAppService.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1xOBBYNZF55J874OprG9TFS3g00" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -67,8 +305,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34991708" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Sedre.Pollution.Api">
@@ -133,6 +377,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
@@ -156,6 +401,13 @@
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.Sedre.Pollution.Api" />
+      <item itemvalue=".NET Launch Settings Profile.Sedre.Pollution.Api: IIS Express" />
+      <item itemvalue=".NET Project.Sedre.Pollution.Application" />
+      <item itemvalue=".NET Project.Sedre.Pollution.Domain" />
+      <item itemvalue=".NET Project.Sedre.Pollution.Infrastructure" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -167,6 +419,9 @@
       <updated>1630216119603</updated>
       <workItem from="1630216137967" duration="1558000" />
       <workItem from="1630248935523" duration="298000" />
+      <workItem from="1630249364959" duration="723000" />
+      <workItem from="1636807859363" duration="1402000" />
+      <workItem from="1637412346819" duration="11411000" />
     </task>
     <task id="LOCAL-00001" summary="Init2">
       <created>1630217225332</created>
@@ -195,23 +450,58 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Init2" />
     <MESSAGE value="Init3" />
     <MESSAGE value="framework" />
     <option name="LAST_COMMIT_MESSAGE" value="framework" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="2152" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1630216291620">
-      <screen x="1600" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2152" y="252" key="Rider.ProjectTemplateDialog.Size/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1630216291620" />
-    <state x="2152" y="253" key="Vcs.Push.Dialog.v2" timestamp="1630217328481">
-      <screen x="1600" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2152" y="253" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.0.1920.1040@1600.0.1920.1040" timestamp="1630217328481" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Sedre.Pollution.Application/Services/PollutionAppService.cs</url>
+          <line>79</line>
+          <properties documentPath="C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\Sedre.Pollution.Application\Services\PollutionAppService.cs" initialLine="79" containingFunctionPresentation="method 'GetLastData'">
+            <startOffsets>
+              <option value="2527" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2585" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Sedre.Pollution.Application/Services/PollutionAppService.cs</url>
+          <line>162</line>
+          <properties documentPath="C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\Sedre.Pollution.Application\Services\PollutionAppService.cs" initialLine="162" containingFunctionPresentation="method 'SearchForLastData'">
+            <startOffsets>
+              <option value="6047" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6129" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

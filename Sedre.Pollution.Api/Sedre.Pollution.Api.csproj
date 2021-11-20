@@ -26,5 +26,14 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="BuildingBlocks.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\BuildingBlocks\BuildingBlocks.Domain\bin\Debug\netstandard2.1\BuildingBlocks.Domain.dll</HintPath>
+      </Reference>
+      <Reference Include="BuildingBlocks.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, ProcessorArchitecture=MSIL">
+        <HintPath>..\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Debug\netstandard2.1\BuildingBlocks.Infrastructure.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 
 </Project>

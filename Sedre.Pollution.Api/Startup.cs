@@ -1,4 +1,6 @@
 using System.Reflection;
+using BuildingBlocks.Domain.Interfaces;
+using BuildingBlocks.Infrastructure.Implementations;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -7,9 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Sedre.Pollution.Domain.Interfaces;
+using Sedre.Pollution.Domain.ProxyServices;
 using Sedre.Pollution.Infrastructure;
-using Sedre.Pollution.Infrastructure.Implementations;
+using Sedre.Pollution.Infrastructure.Proxies;
 
 namespace Sedre.Pollution.Api
 {
@@ -38,6 +40,8 @@ namespace Sedre.Pollution.Api
             services.AddScoped<DbContext>(provider => provider.GetService<PollutionDbContext>());
             services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 
+            services.AddScoped(typeof(IAiInfo), typeof(AiInfo));
+
             services.AddCors(options =>
             {
                 options.AddPolicy("allowall", policy =>
@@ -52,9 +56,9 @@ namespace Sedre.Pollution.Api
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Tutor Student APIs", 
+                    Title = "Sedre Pollution APIs", 
                     Version = "v1",
-                    Description =  "Tutor Student APIs description"
+                    Description =  "Sedre Pollution APIs description"
                 });
                 
             });
@@ -79,8 +83,8 @@ namespace Sedre.Pollution.Api
             app.UseSwaggerUI(options =>
                 {
                     options.RoutePrefix = "api-docs";
-                    options.DocumentTitle = "Tutor Student APIs";
-                    options.SwaggerEndpoint("v1/swagger.json", "Tutor Student definition");
+                    options.DocumentTitle = "Sedre Pollution APIs";
+                    options.SwaggerEndpoint("v1/swagger.json", "Sedre Pollution definition");
                     options.OAuthClientId("swaggerapiui");
                     options.OAuthAppName("Swagger API UI");
                 }

@@ -5,6 +5,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\BuildingBlocks\BuildingBlocks.Domain\BuildingBlocks.Domain.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
         <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
         <PackageReference Include="JetBrains.Annotations" Version="2021.1.0-eap01" />
     </ItemGroup>

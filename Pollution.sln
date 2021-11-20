@@ -6,7 +6,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sedre.Pollution.Application
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sedre.Pollution.Domain", "Sedre.Pollution.Domain\Sedre.Pollution.Domain.csproj", "{75F056A7-A299-447D-B050-638CC52CA347}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sedre.Pollution.Infrastructure", "Sedre.Pollution.Infrastructure\Sedre.Pollution.Infrastructure.csproj", "{FD12DEBF-1506-4421-91BE-A84197CC9156}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks.Application", "BuildingBlocks\BuildingBlocks.Application\BuildingBlocks.Application.csproj", "{0BFE72AE-F19C-4425-BE88-8AFBBA9697D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks.Domain", "BuildingBlocks\BuildingBlocks.Domain\BuildingBlocks.Domain.csproj", "{750CFF5E-F763-4B6D-87E3-AD6742950EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks.Infrastructure", "BuildingBlocks\BuildingBlocks.Infrastructure\BuildingBlocks.Infrastructure.csproj", "{9225538E-8237-4EB1-9324-E4E733BAF825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sedre.Pollution.Infrastructure", "Sedre.Pollution.Infrastructure\Sedre.Pollution.Infrastructure.csproj", "{922810B1-A612-4C61-90C6-9A5F5CBF156C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +32,21 @@ Global
 		{75F056A7-A299-447D-B050-638CC52CA347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75F056A7-A299-447D-B050-638CC52CA347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75F056A7-A299-447D-B050-638CC52CA347}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD12DEBF-1506-4421-91BE-A84197CC9156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD12DEBF-1506-4421-91BE-A84197CC9156}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD12DEBF-1506-4421-91BE-A84197CC9156}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD12DEBF-1506-4421-91BE-A84197CC9156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BFE72AE-F19C-4425-BE88-8AFBBA9697D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BFE72AE-F19C-4425-BE88-8AFBBA9697D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BFE72AE-F19C-4425-BE88-8AFBBA9697D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BFE72AE-F19C-4425-BE88-8AFBBA9697D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750CFF5E-F763-4B6D-87E3-AD6742950EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750CFF5E-F763-4B6D-87E3-AD6742950EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750CFF5E-F763-4B6D-87E3-AD6742950EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750CFF5E-F763-4B6D-87E3-AD6742950EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9225538E-8237-4EB1-9324-E4E733BAF825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9225538E-8237-4EB1-9324-E4E733BAF825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9225538E-8237-4EB1-9324-E4E733BAF825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9225538E-8237-4EB1-9324-E4E733BAF825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922810B1-A612-4C61-90C6-9A5F5CBF156C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922810B1-A612-4C61-90C6-9A5F5CBF156C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922810B1-A612-4C61-90C6-9A5F5CBF156C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922810B1-A612-4C61-90C6-9A5F5CBF156C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
