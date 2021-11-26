@@ -30,6 +30,12 @@ namespace Sedre.Pollution.Api
                 .ForMember(x => x.So2, opt => opt.MapFrom(c => c.SO2));
 
             CreateMap<Indicator, UiIndicatorDto>();
+
+            CreateMap<UiIndicatorDto, MainMapDto>()
+                .ForMember(x => x.Color,
+                    opt => opt.MapFrom(c =>
+                        Formula.DefineColor(Formula.AllFormula(new List<double>
+                            {c.Co, c.No2, c.O3, c.Pm10, c.Pm25, c.So2}))));
             
 
             CreateMap<UiIndicatorDto, CoDto>()

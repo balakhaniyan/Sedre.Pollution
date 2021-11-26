@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sedre.Pollution.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Sedre.Pollution.Api.PollutionProfile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Sedre.Pollution.Api.PollutionProfile.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

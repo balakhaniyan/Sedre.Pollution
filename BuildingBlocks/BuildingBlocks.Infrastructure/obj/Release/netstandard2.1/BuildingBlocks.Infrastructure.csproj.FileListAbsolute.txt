@@ -1,0 +1,12 @@
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Release\netstandard2.1\BuildingBlocks.Infrastructure.deps.json
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Release\netstandard2.1\BuildingBlocks.Infrastructure.dll
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Release\netstandard2.1\BuildingBlocks.Infrastructure.pdb
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Release\netstandard2.1\BuildingBlocks.Domain.dll
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Release\netstandard2.1\BuildingBlocks.Domain.pdb
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Release\netstandard2.1\BuildingBlocks.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Release\netstandard2.1\BuildingBlocks.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Release\netstandard2.1\BuildingBlocks.Infrastructure.AssemblyInfo.cs
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Release\netstandard2.1\BuildingBlocks.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Release\netstandard2.1\BuildingBlocks.Infrastructure.csproj.CopyComplete
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Release\netstandard2.1\BuildingBlocks.Infrastructure.dll
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Release\netstandard2.1\BuildingBlocks.Infrastructure.pdb

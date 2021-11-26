@@ -21,10 +21,6 @@
             </e>
           </e>
         </e>
-        <e p="Services" t="Include">
-          <e p="CrudAppService.cs" t="Include" />
-          <e p="ReadOnlyAppService.cs" t="Include" />
-        </e>
       </e>
       <e p="BuildingBlocks\BuildingBlocks.Domain" t="IncludeRecursive">
         <e p="Attributes" t="Include">
@@ -110,6 +106,7 @@
           <e p="EnumDto.cs" t="Include" />
           <e p="LastUiDataDto.cs" t="Include" />
           <e p="LastUiDataDtoOutput.cs" t="Include" />
+          <e p="MainMapDto.cs" t="Include" />
           <e p="No2Dto.cs" t="Include" />
           <e p="O3Dto.cs" t="Include" />
           <e p="Pm10Dto.cs" t="Include" />

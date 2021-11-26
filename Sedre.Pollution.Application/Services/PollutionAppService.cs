@@ -74,6 +74,18 @@ namespace Sedre.Pollution.Application.Services
             return Ok(_mapper.Map<List<EnumDto>>(indicatorTypes));
         }
 
+        [HttpGet("MapData")]
+        public async Task<IActionResult> GetMapData()
+        {
+            var indicatorsDto = await SearchForLastData(DateTime.Now);
+
+            var colorDto = _mapper.Map<IList<MainMapDto>>(indicatorsDto.Indicators);
+            
+            return Ok(colorDto);
+        }
+        
+        
+
         [HttpGet("LastData")]
         public async Task<IActionResult> GetLastData(string indicator = "All")
         {

@@ -1,0 +1,14 @@
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\bin\Release\netstandard2.1\BuildingBlocks.Application.deps.json
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\bin\Release\netstandard2.1\BuildingBlocks.Application.dll
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\bin\Release\netstandard2.1\BuildingBlocks.Application.pdb
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\bin\Release\netstandard2.1\BuildingBlocks.Domain.dll
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\bin\Release\netstandard2.1\BuildingBlocks.Infrastructure.dll
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\bin\Release\netstandard2.1\BuildingBlocks.Infrastructure.pdb
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\bin\Release\netstandard2.1\BuildingBlocks.Domain.pdb
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\obj\Release\netstandard2.1\BuildingBlocks.Application.csprojAssemblyReference.cache
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\obj\Release\netstandard2.1\BuildingBlocks.Application.AssemblyInfoInputs.cache
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\obj\Release\netstandard2.1\BuildingBlocks.Application.AssemblyInfo.cs
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\obj\Release\netstandard2.1\BuildingBlocks.Application.csproj.CoreCompileInputs.cache
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\obj\Release\netstandard2.1\BuildingBlocks.Application.csproj.CopyComplete
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\obj\Release\netstandard2.1\BuildingBlocks.Application.dll
+C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Application\obj\Release\netstandard2.1\BuildingBlocks.Application.pdb
