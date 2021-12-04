@@ -131,7 +131,6 @@
         <e p="Enums" t="Include">
           <e p="IndicatorType.cs" t="Include" />
         </e>
-        <e p="Formula.cs" t="Include" />
         <e p="Models" t="Include">
           <e p="Indicator.cs" t="Include" />
         </e>
@@ -155,13 +154,14 @@
         </e>
         <e p="Statics" t="Include">
           <e p="Error.cs" t="Include" />
+          <e p="Formula.cs" t="Include" />
         </e>
       </e>
       <e p="Sedre.Pollution.Infrastructure" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Migrations" t="Include">
-          <e p="20211120135958_Init.cs" t="Include" />
-          <e p="20211120135958_Init.Designer.cs" t="Include" />
+          <e p="20211204195637_Init.cs" t="Include" />
+          <e p="20211204195637_Init.Designer.cs" t="Include" />
           <e p="PollutionDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

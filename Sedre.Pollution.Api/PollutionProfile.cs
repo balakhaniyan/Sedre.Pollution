@@ -6,6 +6,7 @@ using Sedre.Pollution.Domain;
 using Sedre.Pollution.Domain.Enums;
 using Sedre.Pollution.Domain.Models;
 using Sedre.Pollution.Domain.ProxyServices.Dto;
+using Sedre.Pollution.Domain.Statics;
 
 namespace Sedre.Pollution.Api
 {
@@ -20,8 +21,14 @@ namespace Sedre.Pollution.Api
         public PollutionProfile()
         {
             CreateMap<AiIndicatorDto, Indicator>()
-                .ForMember(x => x.Latitude, opt => opt.MapFrom(c => c.Latitudes))
-                .ForMember(x => x.Longitude, opt => opt.MapFrom(c => c.Longtitudes))
+                .ForMember(x => x.ALatitude, opt => opt.MapFrom(c => c.ALatitude))
+                .ForMember(x => x.ALongitude, opt => opt.MapFrom(c => c.ALongitude))
+                .ForMember(x => x.BLatitude, opt => opt.MapFrom(c => c.BLatitude))
+                .ForMember(x => x.BLongitude, opt => opt.MapFrom(c => c.BLongitude))
+                .ForMember(x => x.CLatitude, opt => opt.MapFrom(c => c.CLatitude))
+                .ForMember(x => x.CLongitude, opt => opt.MapFrom(c => c.CLongitude))
+                .ForMember(x => x.DLatitude, opt => opt.MapFrom(c => c.DLatitude))
+                .ForMember(x => x.DLongitude, opt => opt.MapFrom(c => c.DLongitude))
                 .ForMember(x => x.Co, opt => opt.MapFrom(c => c.CO))
                 .ForMember(x => x.No2, opt => opt.MapFrom(c => c.NO2))
                 .ForMember(x => x.O3, opt => opt.MapFrom(c => c.O3))

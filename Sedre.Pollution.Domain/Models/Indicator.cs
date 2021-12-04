@@ -8,8 +8,14 @@ namespace Sedre.Pollution.Domain.Models
         [Required] public int Date { get; set; }
         [Required] public int Time { get; set; }
         
-        [Required] public double Latitude { get; set; }
-        [Required] public double Longitude { get; set; }
+        [Required] public double ALatitude { get; set; }
+        [Required] public double ALongitude { get; set; }        
+        [Required] public double BLatitude { get; set; }
+        [Required] public double BLongitude { get; set; }        
+        [Required] public double CLatitude { get; set; }
+        [Required] public double CLongitude { get; set; }        
+        [Required] public double DLatitude { get; set; }
+        [Required] public double DLongitude { get; set; }
         
         [Required] public double O3 { get; set; }
         [Required] public double Co { get; set; }

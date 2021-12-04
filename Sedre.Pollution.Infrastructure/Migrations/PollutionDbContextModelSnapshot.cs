@@ -25,6 +25,24 @@ namespace Sedre.Pollution.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<double>("ALatitude")
+                        .HasColumnType("float");
+
+                    b.Property<double>("ALongitude")
+                        .HasColumnType("float");
+
+                    b.Property<double>("BLatitude")
+                        .HasColumnType("float");
+
+                    b.Property<double>("BLongitude")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CLatitude")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CLongitude")
+                        .HasColumnType("float");
+
                     b.Property<double>("Co")
                         .HasColumnType("float");
 
@@ -33,6 +51,12 @@ namespace Sedre.Pollution.Infrastructure.Migrations
 
                     b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("DLatitude")
+                        .HasColumnType("float");
+
+                    b.Property<double>("DLongitude")
+                        .HasColumnType("float");
 
                     b.Property<int>("Date")
                         .HasColumnType("int");
@@ -45,12 +69,6 @@ namespace Sedre.Pollution.Infrastructure.Migrations
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
-
-                    b.Property<double>("Latitude")
-                        .HasColumnType("float");
-
-                    b.Property<double>("Longitude")
-                        .HasColumnType("float");
 
                     b.Property<double>("No2")
                         .HasColumnType("float");

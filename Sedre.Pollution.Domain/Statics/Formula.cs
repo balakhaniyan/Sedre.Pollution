@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Linq;
 
-namespace Sedre.Pollution.Domain
+namespace Sedre.Pollution.Domain.Statics
 {
     public static class Formula
     {

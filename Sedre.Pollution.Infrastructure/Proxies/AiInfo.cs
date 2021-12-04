@@ -9,7 +9,7 @@ namespace Sedre.Pollution.Infrastructure.Proxies
     public class AiInfo : IAiInfo
     {
         private readonly HttpClient _client;
-        private const string TrackingCodeUrl = "http://185.73.115.95:5000/ground-base-data";
+        private const string TrackingCodeUrl = "http://185.73.115.95:5000/ground-base-data-ui";
         
         public AiInfo()
         {
