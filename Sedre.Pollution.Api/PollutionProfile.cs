@@ -2,7 +2,6 @@
 using BuildingBlocks.Application;
 using Humanizer;
 using Sedre.Pollution.Application.Contracts;
-using Sedre.Pollution.Domain;
 using Sedre.Pollution.Domain.Enums;
 using Sedre.Pollution.Domain.Models;
 using Sedre.Pollution.Domain.ProxyServices.Dto;
@@ -42,7 +41,10 @@ namespace Sedre.Pollution.Api
                 .ForMember(x => x.Color,
                     opt => opt.MapFrom(c =>
                         Formula.DefineColor(Formula.AllFormula(new List<double>
-                            {c.Co, c.No2, c.O3, c.Pm10, c.Pm25, c.So2}))));
+                            {c.Co, c.No2, c.O3, c.Pm10, c.Pm25, c.So2}))))
+                .ForMember(x=>x.Coordinates,
+                    opt=>opt.MapFrom(c=>
+                        Formula.MakeCoordinatesList(c.ALatitude,c.ALongitude,c.BLatitude,c.BLongitude,c.CLatitude,c.CLongitude,c.DLatitude,c.DLongitude)));
             
 
             CreateMap<UiIndicatorDto, CoDto>()

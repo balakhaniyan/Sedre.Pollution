@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 
@@ -25,6 +26,21 @@ namespace Sedre.Pollution.Domain.Statics
             };
             return $"#{color.R:X2}{color.G:X2}{color.B:X2}";
         }
-        
+
+        public static List<List<double>> MakeCoordinatesList(
+            double cALatitude, double cALongitude, 
+            double cBLatitude, double cBLongitude, 
+            double cCLatitude, double cCLongitude, 
+            double cDLatitude, double cDLongitude)
+        {
+            return new List<List<double>>
+            {
+                new List<double> {cALongitude ,cALatitude },
+                new List<double> {cBLongitude ,cBLatitude },
+                new List<double> {cCLongitude ,cCLatitude },
+                new List<double> {cDLongitude ,cDLatitude },
+                new List<double> {cALongitude ,cALatitude }
+            };
+        }
     }
 }
