@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
@@ -82,6 +83,39 @@ namespace Sedre.Pollution.Application.Services
             var colorDto = _mapper.Map<IList<MainMapDto>>(indicatorsDto.Indicators);
             
             return Ok(colorDto);
+        }
+
+        [HttpGet("CoordinateData")]
+        public async Task<IActionResult> GetCoordinateData(
+            [Required] double latitude , [Required] double longitude)
+        {
+            var indicatorsDto = await SearchForLastData(DateTime.Now);
+
+            var distance = double.MaxValue;
+            var closeIndicator = new AllDto();
+            foreach (var indicator in indicatorsDto.Indicators)
+            {
+                var averageLatitude = 
+                    (indicator.ALatitude + indicator.BLatitude + indicator.CLatitude + indicator.DLatitude) /4;
+                var averageLongitude = 
+                    (indicator.ALongitude + indicator.BLongitude + indicator.CLongitude + indicator.DLongitude) /4;
+
+                var tmpDistance = 
+                    Math.Abs(averageLatitude - latitude) + Math.Abs(averageLongitude - longitude);
+
+                if (!(tmpDistance < distance)) continue;
+                distance = tmpDistance;
+                closeIndicator = _mapper.Map<AllDto>(indicator);
+
+            }
+
+            var allDto = new LastUiDataDtoOutputCoordinate<AllDto>
+            {
+                Date = indicatorsDto.Date,
+                Time = indicatorsDto.Time,
+                Indicators = _mapper.Map<AllDto>(closeIndicator)
+            };
+            return Ok(allDto);
         }
         
         
