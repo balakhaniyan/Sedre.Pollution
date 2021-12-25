@@ -40,7 +40,7 @@ namespace Sedre.Pollution.Application.Services
             _recurringJobManager = recurringJobManager;
         }
 
-        [HttpPost("SyncWithAiJob")]
+        [HttpGet("SyncWithAiJob")]
         public void GetLastAiInfoJob()
         {
             _recurringJobManager.AddOrUpdate(
