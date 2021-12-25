@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+FrRSte7lg6wuq+otUrLYw9ZCT+9ZLBVnJ/QxYCQB5VCYeXIKSA+mTuqvql2+sTp8J00MrBMHgldUQvktiV+Rg==",
+  "dgSpecHash": "ytfgC54Rs9rfAuS66r+YOGWDbRLm5Faii8vZngELJXlx2Zo3CbXkTTcfOqkvrEZo0sbuW4gbT6Bwiql71SUQmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Behzad\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Behzad\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\Behzad\\.nuget\\packages\\hangfire.core\\1.8.0-beta4\\hangfire.core.1.8.0-beta4.nupkg.sha512",
     "C:\\Users\\Behzad\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Behzad\\.nuget\\packages\\humanizer.core.fa\\2.8.26\\humanizer.core.fa.2.8.26.nupkg.sha512",
     "C:\\Users\\Behzad\\.nuget\\packages\\jetbrains.annotations\\2021.1.0-eap01\\jetbrains.annotations.2021.1.0-eap01.nupkg.sha512",

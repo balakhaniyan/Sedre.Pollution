@@ -1,6 +1,7 @@
 using System.Reflection;
 using BuildingBlocks.Domain.Interfaces;
 using BuildingBlocks.Infrastructure.Implementations;
+using Hangfire;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -62,7 +63,10 @@ namespace Sedre.Pollution.Api
                 });
                 
             });
-            
+                        
+            services.AddHangfire(configuration =>
+                configuration.UseSqlServerStorage(Configuration.GetConnectionString("Pollution")));
+            services.AddHangfireServer();
             
         }
 
@@ -94,6 +98,9 @@ namespace Sedre.Pollution.Api
             app.UseRouting();
             
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            
+            app.UseHangfireDashboard("/sedreHangfireDashboard");
+
         }
     }
 }

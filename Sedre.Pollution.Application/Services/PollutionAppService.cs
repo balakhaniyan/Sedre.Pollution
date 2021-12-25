@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using BuildingBlocks.Application.Contracts;
 using BuildingBlocks.Domain.Interfaces;
+using Hangfire;
 using Microsoft.AspNetCore.Mvc;
 using Sedre.Pollution.Application.Contracts;
 using Sedre.Pollution.Domain.Enums;
@@ -27,17 +28,28 @@ namespace Sedre.Pollution.Application.Services
         private readonly IUnitOfWork _unitOfWork;
         private readonly IRepository<Indicator> _repository;
         private readonly IAiInfo _aiInfo;
+        private readonly IRecurringJobManager _recurringJobManager;
 
         public PollutionAppService(IMapper mapper, IUnitOfWork unitOfWork, IRepository<Indicator> repository,
-            IAiInfo aiInfo)
+            IAiInfo aiInfo, IRecurringJobManager recurringJobManager)
         {
             _mapper = mapper;
             _unitOfWork = unitOfWork;
             _repository = repository;
             _aiInfo = aiInfo;
+            _recurringJobManager = recurringJobManager;
         }
 
-
+        [HttpPost("SyncWithAiJob")]
+        public void GetLastAiInfoJob()
+        {
+            _recurringJobManager.AddOrUpdate(
+                "hang fire job name",
+                () => GetLastAiInfo(),
+                Cron.Hourly //"0 * * * *" every hour
+            );
+            
+        }
 
         [HttpGet("SyncWithAi")]
         public async Task<IActionResult> GetLastAiInfo()
