@@ -7,7 +7,12 @@
     <projectFile>Sedre.Pollution.Infrastructure/Sedre.Pollution.Infrastructure.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="445fcafd-1c56-4238-9e1e-47520b6aeafc" name="Default Changelist" comment="10/4" />
+    <list default="true" id="445fcafd-1c56-4238-9e1e-47520b6aeafc" name="Default Changelist" comment="10/4 - 7:45">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pollution/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Api/obj/Debug/net5.0/Sedre.Pollution.Api.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Application/obj/Debug/netstandard2.1/Sedre.Pollution.Application.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sedre.Pollution.Domain/Statics/Formula.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sedre.Pollution.Domain/Statics/Formula.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,10 +77,10 @@
       <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/MainMapDto.cs" />
       <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/CoordinateDto.cs" />
       <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Contracts/LastUiDataDtoOutputCoordinate.cs" />
-      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Statics/Formula.cs" />
       <option value="$PROJECT_DIR$/Sedre.Pollution.Api/Sedre.Pollution.Api.csproj" />
-      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Services/PollutionAppService.cs" />
       <option value="$PROJECT_DIR$/Sedre.Pollution.Api/Startup.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Application/Services/PollutionAppService.cs" />
+      <option value="$PROJECT_DIR$/Sedre.Pollution.Domain/Statics/Formula.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1xOBBYNZF55J874OprG9TFS3g00" />
@@ -227,6 +232,8 @@
       <workItem from="1640243468349" duration="23000" />
       <workItem from="1640253181307" duration="3324000" />
       <workItem from="1640424278197" duration="269000" />
+      <workItem from="1640448975332" duration="464000" />
+      <workItem from="1640591468281" duration="257000" />
     </task>
     <task id="LOCAL-00001" summary="Init2">
       <created>1630217225332</created>
@@ -305,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640424311356</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="10/4 - 7:45">
+      <created>1640449066365</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640449066365</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,6 +352,7 @@
     <MESSAGE value="9/15" />
     <MESSAGE value="10/1 - colors fixed" />
     <MESSAGE value="10/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/4" />
+    <MESSAGE value="10/4 - 7:45" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/4 - 7:45" />
   </component>
 </project>
