@@ -5,14 +5,10 @@
     </assembly>
     <members>
         <member name="T:Sedre.Pollution.Api.PollutionProfile">
-            <summary>
-            
-            </summary>
+            <inheritdoc />
         </member>
         <member name="M:Sedre.Pollution.Api.PollutionProfile.#ctor">
-            <summary>
-            
-            </summary>
+            <inheritdoc />
         </member>
     </members>
 </doc>

@@ -10,7 +10,6 @@ using BuildingBlocks.Domain.Interfaces;
 using Hangfire;
 using Microsoft.AspNetCore.Mvc;
 using Sedre.Pollution.Application.Contracts;
-using Sedre.Pollution.Domain.Enums;
 using Sedre.Pollution.Domain.Models;
 using Sedre.Pollution.Domain.ProxyServices;
 using Sedre.Pollution.Domain.Specifications;
@@ -27,26 +26,107 @@ namespace Sedre.Pollution.Application.Services
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IRepository<Indicator> _repository;
+        private readonly IRepository<DayIndicator> _dayIndicatorRepository;
         private readonly IAiInfo _aiInfo;
         private readonly IRecurringJobManager _recurringJobManager;
 
-        public PollutionAppService(IMapper mapper, IUnitOfWork unitOfWork, IRepository<Indicator> repository,
+        public PollutionAppService(IMapper mapper, IUnitOfWork unitOfWork, 
+            IRepository<Indicator> repository, IRepository<DayIndicator> dayIndicatorRepository,
             IAiInfo aiInfo, IRecurringJobManager recurringJobManager)
         {
             _mapper = mapper;
             _unitOfWork = unitOfWork;
             _repository = repository;
+            _dayIndicatorRepository = dayIndicatorRepository;
             _aiInfo = aiInfo;
             _recurringJobManager = recurringJobManager;
         }
+        
+        [HttpGet("MapData")]
+        public async Task<IActionResult> GetMapData()
+        {
+            var indicatorsDto = await SearchForLastData(DateTime.Now);
+            var colorDto = _mapper.Map<IList<MainMapDto>>(indicatorsDto.Indicators);
+            return Ok(colorDto);
+        }
 
-        [HttpGet("SyncWithAiJob")]
-        public void GetLastAiInfoJob()
+        [HttpGet("CoordinateData")]
+        public async Task<IActionResult> GetCoordinateData(
+            [Required] double latitude , [Required] double longitude)
+        {
+            var indicatorsDto = await SearchForLastData(DateTime.Now);
+            var closeIndicator = FindClosestPoint(indicatorsDto.Indicators,latitude, longitude);
+            
+            var result = new CoordinateDto
+            {
+                Date = indicatorsDto.Date,
+                Time = indicatorsDto.Time,
+                Indicator = closeIndicator
+            };
+            return Ok(result);
+        }
+
+        private AllDto FindClosestPoint(IEnumerable<AllDto> indicators, double latitude, double longitude)
+        {
+            var closeIndicator = new AllDto();
+            var distance = double.MaxValue;
+            foreach (var indicator in indicators)
+            {
+                var averageLatitude = 
+                    (indicator.ALatitude + indicator.BLatitude + indicator.CLatitude + indicator.DLatitude) /4;
+                var averageLongitude = 
+                    (indicator.ALongitude + indicator.BLongitude + indicator.CLongitude + indicator.DLongitude) /4;
+
+                var tmpDistance = 
+                    Math.Abs(averageLatitude - latitude) + Math.Abs(averageLongitude - longitude);
+
+                if (!(tmpDistance < distance)) continue;
+                distance = tmpDistance;
+                closeIndicator = _mapper.Map<AllDto>(indicator);
+            }
+
+            return closeIndicator;
+        }
+        
+        private async Task<LastDataDto> SearchForLastData(DateTime dateTime)
+        {
+            var pc = new PersianCalendar();
+            var date = int.Parse( 
+                pc.GetYear(dateTime).ToString("0000") + 
+                pc.GetMonth(dateTime).ToString("00") + 
+                pc.GetDayOfMonth(dateTime).ToString("00")
+            );
+            var time = pc.GetHour(dateTime);
+            
+            var myIndicators = await _repository.ListAsync(new ExistSpecification(date,time));
+            var myIndicatorsWithoutDateAndTimeDto = _mapper.Map<IList<AllDto>>(myIndicators);
+
+            var myIndicatorsDto = new LastDataDto
+            {
+                Date = date,
+                Time = time,
+                Indicators = myIndicatorsWithoutDateAndTimeDto
+            };
+                
+            if (myIndicators.Count == 0)
+                myIndicatorsDto = await SearchForLastData(dateTime.AddHours(-1));
+            
+            return myIndicatorsDto;
+        }
+        
+        [HttpGet("ActiveJobs")]
+        public void GetActiveJobs()
         {
             _recurringJobManager.AddOrUpdate(
-                "hang fire job name",
+                "get ai info every hour",
                 () => GetLastAiInfo(),
                 Cron.Hourly //"0 * * * *" every hour
+            );
+            
+            _recurringJobManager.AddOrUpdate(
+                "compute last day average",
+                () => GetComputeDayAverage(),
+                "30 0 * * *" //every day on 4AM = 12:30 + 3:30 (time zone)
             );
             
         }
@@ -58,7 +138,6 @@ namespace Sedre.Pollution.Application.Services
 
             var date = int.Parse(myIndicatorsDto.Date);
             var time = int.Parse(myIndicatorsDto.Time);
-
 
             var alreadyExist = await _repository.GetAsync(new ExistSpecification(date, time));
             if (!(alreadyExist is null))
@@ -77,162 +156,81 @@ namespace Sedre.Pollution.Application.Services
 
             return Ok(new ResponseDto(Error.LastDataReceived));
         }
-        
-        
 
-        [HttpGet("IndicatorsType")]
-        public IActionResult GetIndicatorsType()
-        {
-            var indicatorTypes = Enum.GetValues(typeof(IndicatorType));
-            return Ok(_mapper.Map<List<EnumDto>>(indicatorTypes));
-        }
-
-        [HttpGet("MapData")]
-        public async Task<IActionResult> GetMapData()
+        [HttpGet("ComputeDayAverage")]
+        public async Task<IActionResult> GetComputeDayAverage()
         {
             var indicatorsDto = await SearchForLastData(DateTime.Now);
-
-            var colorDto = _mapper.Map<IList<MainMapDto>>(indicatorsDto.Indicators);
+            var previousData = await _repository.ListAsync(new GetPreviousDayData(indicatorsDto.Date));
+            var sortedPreviousData = previousData.OrderByDescending(x => x.Date).ThenByDescending(x => x.Time).ToList();
             
-            return Ok(colorDto);
-        }
-
-        [HttpGet("CoordinateData")]
-        public async Task<IActionResult> GetCoordinateData(
-            [Required] double latitude , [Required] double longitude)
-        {
-            var indicatorsDto = await SearchForLastData(DateTime.Now);
-
-            var distance = double.MaxValue;
-            var closeIndicator = new AllDto();
-            foreach (var indicator in indicatorsDto.Indicators)
+            IList<List<Indicator>> listOfLists = new List<List<Indicator>>();
+            var lastIndicatorDate = sortedPreviousData.First().Date;
+            var lastIndicatorTime = sortedPreviousData.First().Time;
+            var tmp = new List<Indicator>();
+            foreach (var indicator in sortedPreviousData)
             {
-                var averageLatitude = 
-                    (indicator.ALatitude + indicator.BLatitude + indicator.CLatitude + indicator.DLatitude) /4;
-                var averageLongitude = 
-                    (indicator.ALongitude + indicator.BLongitude + indicator.CLongitude + indicator.DLongitude) /4;
-
-                var tmpDistance = 
-                    Math.Abs(averageLatitude - latitude) + Math.Abs(averageLongitude - longitude);
-
-                if (!(tmpDistance < distance)) continue;
-                distance = tmpDistance;
-                closeIndicator = _mapper.Map<AllDto>(indicator);
-
+                if (lastIndicatorDate == indicator.Date && lastIndicatorTime == indicator.Time)
+                {
+                    tmp.Add(indicator);
+                }
+                else if(lastIndicatorDate == indicator.Date && lastIndicatorTime != indicator.Time)
+                {
+                    if (tmp.Count != 0)
+                    {
+                        listOfLists.Add(tmp);
+                        tmp = new List<Indicator>();
+                        lastIndicatorTime--;
+                    }
+                }
+                else
+                {
+                    break;
+                }
             }
 
-            var allDto = new LastUiDataDtoOutputCoordinate<AllDto>
+            for (var i = 0; i < listOfLists.First().Count; i++)
             {
-                Date = indicatorsDto.Date,
-                Time = indicatorsDto.Time,
-                Indicators = _mapper.Map<AllDto>(closeIndicator)
-            };
-            return Ok(allDto);
-        }
-        
-        
+                var sumCo = 0.00;
+                var sumNo2 = 0.00;
+                var sumO3 = 0.00;
+                var sumPm10 = 0.00;
+                var sumPm25 = 0.00;
+                var sumSo2 = 0.00;
+                foreach (var t in listOfLists)
+                {
+                    sumCo += t[i].Co;
+                    sumNo2 += t[i].No2;
+                    sumO3 += t[i].O3;
+                    sumPm10 += t[i].Pm10;
+                    sumPm25 += t[i].Pm25;
+                    sumSo2 += t[i].So2;
+                }
 
-        [HttpGet("LastData")]
-        public async Task<IActionResult> GetLastData(string indicator = "All")
-        {
-            var indicatorsDto = await SearchForLastData(DateTime.Now);
-            var indicatorType = (IndicatorType) Enum.Parse(typeof(IndicatorType), indicator, true);
-            switch (indicatorType)
-            {
-                
-                case IndicatorType.All:
-                    var allDto = new LastUiDataDtoOutput<AllDto>
-                    {
-                        Date = indicatorsDto.Date,
-                        Time = indicatorsDto.Time,
-                        Indicators = _mapper.Map<IList<AllDto>>(indicatorsDto.Indicators)
-                    };
-                    return Ok(allDto);
-                
-                case IndicatorType.Co:
-                    var coDto = new LastUiDataDtoOutput<CoDto>
-                    {
-                        Date = indicatorsDto.Date,
-                        Time = indicatorsDto.Time,
-                        Indicators = _mapper.Map<IList<CoDto>>(indicatorsDto.Indicators)
-                    };
-                    return Ok(coDto);
-                
-                case IndicatorType.No2:
-                    var no2Dto = new LastUiDataDtoOutput<No2Dto>
-                    {
-                        Date = indicatorsDto.Date,
-                        Time = indicatorsDto.Time,
-                        Indicators = _mapper.Map<IList<No2Dto>>(indicatorsDto.Indicators)
-                    };
-                    return Ok(no2Dto);
-                
-                case IndicatorType.O3:
-                    var o3Dto = new LastUiDataDtoOutput<O3Dto>
-                    {
-                        Date = indicatorsDto.Date,
-                        Time = indicatorsDto.Time,
-                        Indicators = _mapper.Map<IList<O3Dto>>(indicatorsDto.Indicators)
-                    };
-                    return Ok(o3Dto);
-                
-                case IndicatorType.Pm10:
-                    var pm10Dto = new LastUiDataDtoOutput<Pm10Dto>
-                    {
-                        Date = indicatorsDto.Date,
-                        Time = indicatorsDto.Time,
-                        Indicators = _mapper.Map<IList<Pm10Dto>>(indicatorsDto.Indicators)
-                    };
-                    return Ok(pm10Dto);
-                
-                case IndicatorType.Pm25:
-                    var pm25Dto = new LastUiDataDtoOutput<Pm25Dto>
-                    {
-                        Date = indicatorsDto.Date,
-                        Time = indicatorsDto.Time,
-                        Indicators = _mapper.Map<IList<Pm25Dto>>(indicatorsDto.Indicators)
-                    };
-                    return Ok(pm25Dto);
-                
-                case IndicatorType.So2:
-                    var so2Dto = new LastUiDataDtoOutput<So2Dto>
-                    {
-                        Date = indicatorsDto.Date,
-                        Time = indicatorsDto.Time,
-                        Indicators = _mapper.Map<IList<So2Dto>>(indicatorsDto.Indicators)
-                    };
-                    return Ok(so2Dto);
-                default:
-                    return NotFound();
+                var myDayIndicator = new DayIndicator
+                {
+                    Date = listOfLists[0][i].Date,
+                    ALatitude = listOfLists[0][i].ALatitude,
+                    ALongitude = listOfLists[0][i].ALongitude,
+                    BLatitude = listOfLists[0][i].BLatitude,
+                    BLongitude = listOfLists[0][i].BLongitude,
+                    CLatitude = listOfLists[0][i].CLatitude,
+                    CLongitude = listOfLists[0][i].CLongitude,
+                    DLatitude = listOfLists[0][i].DLatitude,
+                    DLongitude = listOfLists[0][i].DLongitude,
+                    Co = Math.Round(sumCo / listOfLists.Count, 2),
+                    No2 = Math.Round(sumNo2 / listOfLists.Count, 2),
+                    O3 = Math.Round(sumO3 / listOfLists.Count, 2),
+                    Pm10 = Math.Round(sumPm10 / listOfLists.Count, 2),
+                    Pm25 = Math.Round(sumPm25 / listOfLists.Count, 2),
+                    So2 = Math.Round(sumSo2 / listOfLists.Count, 2),
+                };
+                await _dayIndicatorRepository.Add(myDayIndicator);
             }
-            
-        }
 
-        private async Task<LastUiDataDto> SearchForLastData(DateTime dateTime)
-        {
-            var pc = new PersianCalendar();
-            var date = int.Parse( 
-                pc.GetYear(dateTime).ToString("0000") + 
-                pc.GetMonth(dateTime).ToString("00") + 
-                pc.GetDayOfMonth(dateTime).ToString("00")
-            );
-            var time = pc.GetHour(dateTime);
-            
-            var myIndicators = await _repository.ListAsync(new ExistSpecification(date,time));
-            var myIndicatorsWithoutDateAndTimeDto = _mapper.Map<IList<UiIndicatorDto>>(myIndicators);
-
-            var myIndicatorsDto = new LastUiDataDto
-            {
-                Date = date,
-                Time = time,
-                Indicators = myIndicatorsWithoutDateAndTimeDto
-            };
-                
-            if (myIndicators.Count == 0)
-                myIndicatorsDto = await SearchForLastData(dateTime.AddHours(-1));
-            
-            
-            return myIndicatorsDto;
+            await _repository.DeleteAsync(previousData);
+            await _unitOfWork.CompleteAsync();
+            return Ok(new ResponseDto(Error.PreviousDayAveraged));
         }
     }
     

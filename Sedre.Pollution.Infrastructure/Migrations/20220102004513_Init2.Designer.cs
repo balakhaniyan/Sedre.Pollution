@@ -10,8 +10,8 @@ using Sedre.Pollution.Infrastructure;
 namespace Sedre.Pollution.Infrastructure.Migrations
 {
     [DbContext(typeof(PollutionDbContext))]
-    [Migration("20211204195637_Init")]
-    partial class Init
+    [Migration("20220102004513_Init2")]
+    partial class Init2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -48,12 +48,6 @@ namespace Sedre.Pollution.Infrastructure.Migrations
                     b.Property<double>("Co")
                         .HasColumnType("float");
 
-                    b.Property<DateTime>("CreatedAtUtc")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<double>("DLatitude")
                         .HasColumnType("float");
 
@@ -62,15 +56,6 @@ namespace Sedre.Pollution.Infrastructure.Migrations
 
                     b.Property<int>("Date")
                         .HasColumnType("int");
-
-                    b.Property<DateTime?>("DeletedAtUtc")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("DeletedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
 
                     b.Property<double>("No2")
                         .HasColumnType("float");
@@ -89,12 +74,6 @@ namespace Sedre.Pollution.Infrastructure.Migrations
 
                     b.Property<int>("Time")
                         .HasColumnType("int");
-
-                    b.Property<DateTime?>("UpdatedAtUtc")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UpdatedBy")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

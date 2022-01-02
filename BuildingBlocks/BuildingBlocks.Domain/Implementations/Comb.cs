@@ -1,10 +1,5 @@
 ﻿using System;
-using System.IO;
-using System.Security.Cryptography;
-using System.Text;
 using System.Threading;
-using BuildingBlocks.Domain.Models;
-using Microsoft.AspNetCore.Http;
 
 namespace BuildingBlocks.Domain.Implementations
 {
@@ -33,39 +28,6 @@ namespace BuildingBlocks.Domain.Implementations
                     binDate[7], binDate[6], binDate[5], binDate[4], binDate[3], binDate[2]
                 });
         }
-        
-        public static string HashPassword(string password)
-        {
-            var md5Hash = MD5.Create();
-            
-            var data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
-            var builder = new StringBuilder();
-            foreach (var t in data)
-            {
-                builder.Append(t.ToString("x2"));
-            }
-            
-            return builder.ToString();
-        }
-        
-        
-        public static Document CreateDocument(IFormFile photo)
-        { 
-            using var stream = new MemoryStream();
-            photo.CopyToAsync(stream);
-            stream.Position = 0;
-            
-            var myDocument = new Document
-            {
-                FileName = photo.FileName,
-                ContentType = photo.ContentType,
-                Extension = new FileInfo(photo.FileName).Extension,
-                Length = photo.Length,
-                Data = stream.ToArray()
-            };
 
-            return myDocument;
-        }
-        
     }
 }

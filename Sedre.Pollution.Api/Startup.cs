@@ -99,7 +99,7 @@ namespace Sedre.Pollution.Api
             
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
             
-            app.UseHangfireDashboard("/sedreHangfireDashboard");
+            app.UseHangfireDashboard("/jobs");
 
         }
     }

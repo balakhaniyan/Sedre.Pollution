@@ -7,11 +7,7 @@
       <e p="BuildingBlocks\BuildingBlocks.Application" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="BuildingBlocks.Application.csproj" t="IncludeRecursive" />
-        <e p="BuildingBlocksProfile.cs" t="Include" />
         <e p="Contracts" t="Include">
-          <e p="DocumentDto.cs" t="Include" />
-          <e p="EntityDto.cs" t="Include" />
-          <e p="EntityListDto.cs" t="Include" />
           <e p="ResponseDto.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -23,32 +19,19 @@
         </e>
       </e>
       <e p="BuildingBlocks\BuildingBlocks.Domain" t="IncludeRecursive">
-        <e p="Attributes" t="Include">
-          <e p="LengthControlAttribute.cs" t="Include" />
-        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="BuildingBlocks.Domain.csproj" t="IncludeRecursive" />
-        <e p="Enums" t="Include">
-          <e p="GenderType.cs" t="Include" />
-        </e>
         <e p="Implementations" t="Include">
           <e p="Comb.cs" t="Include" />
           <e p="Entity.cs" t="Include" />
-          <e p="PersianDateTimeHelper.cs" t="Include" />
-          <e p="TrackableEntity.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
           <e p="AndSpecification.cs" t="Include" />
           <e p="IEntity.cs" t="Include" />
           <e p="IRepository.cs" t="Include" />
           <e p="ISoftDeletable.cs" t="Include" />
-          <e p="ITrackableEntity.cs" t="Include" />
           <e p="IUnitOfWork.cs" t="Include" />
           <e p="Specification.cs" t="Include" />
-        </e>
-        <e p="Models" t="Include">
-          <e p="Document.cs" t="Include" />
-          <e p="Error.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -101,19 +84,9 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Contracts" t="Include">
           <e p="AllDto.cs" t="Include" />
-          <e p="BaseIndicatorDto.cs" t="Include" />
-          <e p="CoDto.cs" t="Include" />
-          <e p="EnumDto.cs" t="Include" />
-          <e p="LastUiDataDto.cs" t="Include" />
-          <e p="LastUiDataDtoOutput.cs" t="Include" />
-          <e p="LastUiDataDtoOutputCoordinate.cs" t="Include" />
+          <e p="CoordinateDto.cs" t="Include" />
+          <e p="LastDataDto.cs" t="Include" />
           <e p="MainMapDto.cs" t="Include" />
-          <e p="No2Dto.cs" t="Include" />
-          <e p="O3Dto.cs" t="Include" />
-          <e p="Pm10Dto.cs" t="Include" />
-          <e p="Pm25Dto.cs" t="Include" />
-          <e p="So2Dto.cs" t="Include" />
-          <e p="UiIndicatorDto.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -129,10 +102,8 @@
       </e>
       <e p="Sedre.Pollution.Domain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Enums" t="Include">
-          <e p="IndicatorType.cs" t="Include" />
-        </e>
         <e p="Models" t="Include">
+          <e p="DayIndicator.cs" t="Include" />
           <e p="Indicator.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -152,6 +123,7 @@
         <e p="Sedre.Pollution.Domain.csproj" t="IncludeRecursive" />
         <e p="Specifications" t="Include">
           <e p="ExistSpecification.cs" t="Include" />
+          <e p="GetPreviousDayData.cs" t="Include" />
         </e>
         <e p="Statics" t="Include">
           <e p="Error.cs" t="Include" />
@@ -161,8 +133,12 @@
       <e p="Sedre.Pollution.Infrastructure" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Migrations" t="Include">
-          <e p="20211204195637_Init.cs" t="Include" />
-          <e p="20211204195637_Init.Designer.cs" t="Include" />
+          <e p="20220101230959_Init.cs" t="Include" />
+          <e p="20220101230959_Init.Designer.cs" t="Include" />
+          <e p="20220102004513_Init2.cs" t="Include" />
+          <e p="20220102004513_Init2.Designer.cs" t="Include" />
+          <e p="20220102005140_Init3.cs" t="Include" />
+          <e p="20220102005140_Init3.Designer.cs" t="Include" />
           <e p="PollutionDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

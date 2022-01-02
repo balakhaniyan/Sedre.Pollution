@@ -16,4 +16,14 @@
         <ProjectReference Include="..\Sedre.Pollution.Infrastructure\Sedre.Pollution.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Contracts\No2Dto.cs" />
+      <Compile Remove="Contracts\O3Dto.cs" />
+      <Compile Remove="Contracts\Pm10Dto.cs" />
+      <Compile Remove="Contracts\Pm25Dto.cs" />
+      <Compile Remove="Contracts\So2Dto.cs" />
+      <Compile Remove="Contracts\CoDto.cs" />
+      <Compile Remove="Contracts\LastUiDataDtoOutput.cs" />
+    </ItemGroup>
+
 </Project>

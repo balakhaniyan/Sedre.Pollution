@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace BuildingBlocks.Domain.Interfaces
@@ -7,13 +6,9 @@ namespace BuildingBlocks.Domain.Interfaces
     public interface IRepository<T> where T : class, IEntity
     {
         Task Add(T entity);
-        Task AddList(List<T> entities);
-        Task Update(T entity);
-        Task DeleteAsync(Guid id);
-        Task DeleteAsync(T entity);
-        Task<T> GetByIdAsync(Guid id);
+        Task AddList(IEnumerable<T> entities);
         Task<T> GetAsync(Specification<T> spec);
+        Task DeleteAsync(IEnumerable<T> entities);
         Task<IList<T>> ListAsync(Specification<T> spec);
-        Task<IList<T>> ListAllAsync();
     }
 }

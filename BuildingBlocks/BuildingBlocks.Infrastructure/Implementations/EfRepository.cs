@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BuildingBlocks.Domain.Implementations;
 using BuildingBlocks.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace BuildingBlocks.Infrastructure.Implementations
 {
-    public class EfRepository<T> : IRepository<T> where T : class , IEntity
+    public sealed class EfRepository<T> : IRepository<T> where T : class , IEntity
     {
         private readonly DbContext _dbContext;
 
@@ -17,9 +15,9 @@ namespace BuildingBlocks.Infrastructure.Implementations
             _dbContext = dbContext;
         }
 
-        protected IQueryable<T> Table => Set;
-        protected IQueryable<T> TableAsNoTracking => Set.AsNoTracking();
-        protected DbSet<T> Set => _dbContext.Set<T>();
+        private IQueryable<T> Table => Set;
+        private IQueryable<T> TableAsNoTracking => Set.AsNoTracking();
+        private DbSet<T> Set => _dbContext.Set<T>();
 
         public async Task<T> GetAsync(Specification<T> spec)
         {
@@ -30,13 +28,10 @@ namespace BuildingBlocks.Infrastructure.Implementations
 
         public async Task Add(T entity)
         {
-            if(entity is TrackableEntity trackable)
-                trackable.CreatedAtUtc = DateTime.Now;
-
             await Set.AddAsync(entity);
         }
 
-        public async Task AddList(List<T> entities)
+        public async Task AddList(IEnumerable<T> entities)
         {
             foreach (var entity in entities)
             {
@@ -44,21 +39,7 @@ namespace BuildingBlocks.Infrastructure.Implementations
             }
         }
 
-        public async Task Update(T entity)
-        {
-            if(entity is TrackableEntity trackable)
-                trackable.UpdatedAtUtc = DateTime.Now;
-            Set.Update(entity);
-        }
-
-        public async Task DeleteAsync(Guid id)
-        {
-            var entity = await GetByIdAsync(id);
-
-            await DeleteAsync(entity);
-        }
-
-        public async Task DeleteAsync(IList<T> entities)
+        public async Task DeleteAsync(IEnumerable<T> entities)
         {
             foreach (var entity in entities)
             {
@@ -66,72 +47,17 @@ namespace BuildingBlocks.Infrastructure.Implementations
             }
         }
 
-        public Task DeleteAsync(T entity)
+        private Task DeleteAsync(T entity)
         {
-            if(entity is TrackableEntity trackable)
-                trackable.DeletedAtUtc = DateTime.Now;
-
-            if (entity is ISoftDeletable deletable)
-            {
-                deletable.IsDeleted = true;
-            }
-            else
-            {
-                Set.Remove(entity);
-            }
-
+            Set.Remove(entity);
             return Task.CompletedTask;
         }
 
-        public virtual async Task<IList<T>> ListAsync(Specification<T> spec)
+        public async Task<IList<T>> ListAsync(Specification<T> spec)
         {
             var query = await SpecificationEvaluator<T>.GetQuery(_dbContext.Set<T>().AsQueryable(), spec).ToListAsync();
-            var result = new List<T>();
-            foreach (var entity in query)
-            {
-                if (entity is ISoftDeletable deletable)
-                {
-                    if(!deletable.IsDeleted)
-                        result.Add(entity);
-                }
-                else
-                {
-                    result.Add(entity);
-                }
-            }
-            
-            return result;
+            return query;
         }
 
-        public  async Task<T> GetByIdAsync(Guid id)
-        {
-            var entity = await Table.SingleOrDefaultAsync(x => x.Id == id);
-
-            if (!(entity is ISoftDeletable deletable)) return entity;
-            return deletable.IsDeleted ? null : entity;
-        }
-
-        public  async Task<IList<T>> ListAllAsync()
-        {
-            var entities = await TableAsNoTracking.ToListAsync();
-            var exitEntities = new List<T>();
-            foreach (var entity in entities)
-            {
-                if (entity is ISoftDeletable deletable)
-                {
-                    if (!deletable.IsDeleted)
-                    {
-                        exitEntities.Add(entity);
-                    }
-                }
-                else
-                {
-                    exitEntities.Add(entity);
-                }
-            }
-
-            return exitEntities;
-        }
-        
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using BuildingBlocks.Domain.Interfaces;
 
 namespace BuildingBlocks.Domain.Implementations
@@ -10,6 +11,6 @@ namespace BuildingBlocks.Domain.Implementations
             Id = Comb.Create();
         }
 
-        public Guid Id { get; set; }
+        [Key] public Guid Id { get; set; }
     }
 }

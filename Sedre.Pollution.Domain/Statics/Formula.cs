@@ -6,7 +6,7 @@ namespace Sedre.Pollution.Domain.Statics
     public static class Formula
     {
 
-        public static double AllFormula(IEnumerable<double> indicators)
+        public static double DefineAll(IEnumerable<double> indicators)
         {
             return indicators.Prepend(0.00).Max();
         }
@@ -70,6 +70,17 @@ namespace Sedre.Pollution.Domain.Statics
             // return $"#{color.R:X2}{color.G:X2}{color.B:X2}";
         }
 
+        public static string DefineStatus(double indicator)
+        {
+            return indicator switch
+            {
+                _ when indicator <= 50 => "پاک",
+                _ when indicator <= 100 => "سالم",
+                _ when indicator <= 150 => "ناسالم برای گروه های حساس",
+                _ => "ناسالم"
+            };
+        }
+        
         public static List<List<double>> MakeCoordinatesList(
             double cALatitude, double cALongitude, 
             double cBLatitude, double cBLongitude, 
@@ -85,5 +96,6 @@ namespace Sedre.Pollution.Domain.Statics
                 new List<double> {cALongitude ,cALatitude }
             };
         }
+        
     }
 }
