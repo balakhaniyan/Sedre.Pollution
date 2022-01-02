@@ -26,6 +26,11 @@ namespace Sedre.Pollution.Api
                     opt => opt.MapFrom(c =>
                         Formula.DefineAll(new List<double>{c.Co,c.No2,c.O3,c.Pm10,c.Pm25,c.So2})));
 
+            CreateMap<DayIndicator, AllDto>()
+                .ForMember(x => x.All,
+                    opt => opt.MapFrom(c =>
+                        Formula.DefineAll(new List<double>{c.Co,c.No2,c.O3,c.Pm10,c.Pm25,c.So2})));
+
             CreateMap<AllDto, MainMapDto>()
                 .ForMember(x => x.Color,
                     opt => opt.MapFrom(c =>

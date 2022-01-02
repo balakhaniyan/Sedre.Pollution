@@ -8,6 +8,7 @@ namespace Sedre.Pollution.Infrastructure
     {
         public DbSet<Indicator> Indicators { get; set; }
         public DbSet<DayIndicator> DayIndicators { get; set; }
+        public DbSet<MonthIndicator> MonthIndicators { get; set; }
         
         public PollutionDbContext(DbContextOptions options) :base(options)
         {
