@@ -3,7 +3,7 @@ using BuildingBlocks.Domain.Implementations;
 
 namespace Sedre.Pollution.Domain.Models
 {
-    public class Indicator: Entity
+    public class HourIndicator: Entity
     {
         [Required] public int Date { get; set; }
         [Required] public int Time { get; set; }

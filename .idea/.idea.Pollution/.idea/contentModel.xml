@@ -86,7 +86,6 @@
           <e p="AllDto.cs" t="Include" />
           <e p="CoordinateDto.cs" t="Include" />
           <e p="LastDataDto.cs" t="Include" />
-          <e p="LastMonthDataDto.cs" t="Include" />
           <e p="MainMapDto.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -105,7 +104,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Models" t="Include">
           <e p="DayIndicator.cs" t="Include" />
-          <e p="Indicator.cs" t="Include" />
+          <e p="HourIndicator.cs" t="Include" />
           <e p="MonthIndicator.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -125,7 +124,11 @@
         <e p="Sedre.Pollution.Domain.csproj" t="IncludeRecursive" />
         <e p="Specifications" t="Include">
           <e p="ExistDaySpecification.cs" t="Include" />
-          <e p="ExistSpecification.cs" t="Include" />
+          <e p="ExistHourSpecification.cs" t="Include" />
+          <e p="ExistMonthSpecification.cs" t="Include" />
+          <e p="GetPeriodDay.cs" t="Include" />
+          <e p="GetPeriodHour.cs" t="Include" />
+          <e p="GetPeriodMonth.cs" t="Include" />
           <e p="GetPreviousDayData.cs" t="Include" />
           <e p="GetPreviousMonthData.cs" t="Include" />
         </e>
@@ -147,6 +150,8 @@
           <e p="20220102110023_Init4.Designer.cs" t="Include" />
           <e p="20220102110317_Init5.cs" t="Include" />
           <e p="20220102110317_Init5.Designer.cs" t="Include" />
+          <e p="20220102161055_Init7.cs" t="Include" />
+          <e p="20220102161055_Init7.Designer.cs" t="Include" />
           <e p="PollutionDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

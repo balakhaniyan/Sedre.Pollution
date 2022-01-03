@@ -6,7 +6,7 @@ namespace Sedre.Pollution.Infrastructure
 {
     public class PollutionDbContext : DbContextBase
     {
-        public DbSet<Indicator> Indicators { get; set; }
+        public DbSet<HourIndicator> HourIndicators { get; set; }
         public DbSet<DayIndicator> DayIndicators { get; set; }
         public DbSet<MonthIndicator> MonthIndicators { get; set; }
         

@@ -5,18 +5,18 @@ using Sedre.Pollution.Domain.Models;
 
 namespace Sedre.Pollution.Domain.Specifications
 {
-    public class GetPreviousDayData: Specification<HourIndicator>
+    public class ExistMonthSpecification: Specification<MonthIndicator>
     {
 
         private readonly int _date;
 
-        public GetPreviousDayData(int date)
+        public ExistMonthSpecification(int date)
         {
             _date = date;
         }
 
-        public override Expression<Func<HourIndicator, bool>> Criteria =>
-            myHourIndicator => myHourIndicator.Date < _date ;
+        public override Expression<Func<MonthIndicator, bool>> Criteria =>
+            myMonthIndicator => myMonthIndicator.Date == _date;
 
     }
 }
