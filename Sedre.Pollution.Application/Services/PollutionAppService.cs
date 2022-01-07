@@ -21,7 +21,7 @@ namespace Sedre.Pollution.Application.Services
     [Route("api/[controller]")]
 
     public class PollutionAppService : ControllerBase
-    {
+    { 
         
         #region init
         
