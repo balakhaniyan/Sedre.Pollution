@@ -96,6 +96,15 @@ namespace Sedre.Pollution.Domain.Statics
                 new List<double> {cALongitude ,cALatitude }
             };
         }
-        
+
+        public static int ComputeNumberOfMonthDays(int month)
+        {
+            return month switch
+            {
+                _ when month <= 6 => 31,
+                _ when month <= 11 => 30,
+                _ => 28
+            };
+        }
     }
 }

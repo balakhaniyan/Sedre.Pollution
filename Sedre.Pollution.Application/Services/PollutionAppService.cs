@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Sedre.Pollution.Application.Contracts;
 using Sedre.Pollution.Domain.Models;
 using Sedre.Pollution.Domain.ProxyServices;
+using Sedre.Pollution.Domain.ProxyServices.Dto;
 using Sedre.Pollution.Domain.Specifications;
 using Sedre.Pollution.Domain.Statics;
 
@@ -682,6 +683,96 @@ namespace Sedre.Pollution.Application.Services
         }
 
         #endregion
+        
+        
+        [HttpGet("OldData")]
+        public async Task<IActionResult> GetOldData()
+        {
+            var (year, month) = Tuple.Create(1398,1);
+            var (endYear, endMonth) = Tuple.Create(1400,9);
+
+            while (!(year == endYear && month == endMonth))
+            {
+                var sumCo = new List<double>();
+                var sumNo2 = new List<double>();
+                var sumO3 = new List<double>();
+                var sumPm10 = new List<double>();
+                var sumPm25 = new List<double>();
+                var sumSo2 = new List<double>();
+
+                var myIndicatorsDto = new LastAiDataDto();
+
+                var numberOfMonthDays = Formula.ComputeNumberOfMonthDays(month);
+                for (var day = 1; day <= numberOfMonthDays; day++)
+                {
+                    for (var hour = 0; hour <= 23; hour++)
+                    {
+                        myIndicatorsDto = await _aiInfo.GetData(year,month,day,hour);
+                        
+                        if (day == 1 && hour == 0)
+                        {
+                            foreach (var t in myIndicatorsDto.indicators)
+                            {
+                                sumCo.Add(t.CO);
+                                sumNo2.Add(t.NO2);
+                                sumO3.Add(t.O3);
+                                sumPm10.Add(t.PM10);
+                                sumPm25.Add(t.PM2_5);
+                                sumSo2.Add(t.SO2);
+                            }
+                        }
+                        else
+                        {
+                            for (var i = 0; i < myIndicatorsDto.indicators.Count; i++)
+                            {
+                                sumCo[i] += myIndicatorsDto.indicators[i].CO;
+                                sumNo2[i] += myIndicatorsDto.indicators[i].NO2;
+                                sumO3[i] += myIndicatorsDto.indicators[i].O3;
+                                sumPm10[i] += myIndicatorsDto.indicators[i].PM10;
+                                sumPm25[i] += myIndicatorsDto.indicators[i].PM2_5;
+                                sumSo2[i] += myIndicatorsDto.indicators[i].SO2;
+                            }
+                        }
+
+                    }
+                }
+
+                for (var i = 0; i < myIndicatorsDto.indicators.Count ; i++)
+                {
+                    var myMonthIndicator = new MonthIndicator
+                    {
+                        ALatitude = myIndicatorsDto.indicators[i].ALatitude,
+                        ALongitude = myIndicatorsDto.indicators[i].ALongitude,
+                        BLatitude = myIndicatorsDto.indicators[i].BLatitude,
+                        BLongitude = myIndicatorsDto.indicators[i].BLongitude,
+                        CLatitude = myIndicatorsDto.indicators[i].CLatitude,
+                        CLongitude = myIndicatorsDto.indicators[i].CLongitude,
+                        DLatitude = myIndicatorsDto.indicators[i].DLatitude,
+                        DLongitude = myIndicatorsDto.indicators[i].DLongitude,
+
+                        Co = Math.Round(sumCo[i] / (24 * numberOfMonthDays), 2),
+                        No2 = Math.Round(sumNo2[i] / (24 * numberOfMonthDays), 2),
+                        O3 = Math.Round(sumO3[i] / (24 * numberOfMonthDays), 2),
+                        Pm10 = Math.Round(sumPm10[i] / (24 * numberOfMonthDays), 2),
+                        Pm25 = Math.Round(sumPm25[i] / (24 * numberOfMonthDays), 2),
+                        So2 = Math.Round(sumSo2[i] / (24 * numberOfMonthDays), 2),
+
+                        Date = int.Parse(myIndicatorsDto.Date.Substring(0, 6))
+                    };
+
+                    await _monthIndicatorRepository.Add(myMonthIndicator);
+                    await _unitOfWork.CompleteAsync();
+                }
+                
+                month++;
+                if (month <= 12) continue;
+                month = 1;
+                year++;
+
+            }
+
+            return Ok(new ResponseDto(Error.LastDataReceived));
+        }
         
     }
     
