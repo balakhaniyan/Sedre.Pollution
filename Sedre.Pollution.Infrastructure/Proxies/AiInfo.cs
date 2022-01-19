@@ -9,7 +9,6 @@ namespace Sedre.Pollution.Infrastructure.Proxies
     public class AiInfo : IAiInfo
     {
         private readonly HttpClient _client;
-        private const string LastDataUrl = "http://185.73.115.95:5000/ground-base-data-ui";
         private const string DataUrl = "http://185.73.115.95:5000/ground-base-data-ui";
         
         public AiInfo()
@@ -24,7 +23,7 @@ namespace Sedre.Pollution.Infrastructure.Proxies
 
         public async Task<LastAiDataDto> GetLastData()
         {
-            var response = await _client.GetAsync(LastDataUrl);
+            var response = await _client.GetAsync(DataUrl);
             response.EnsureSuccessStatusCode();
             var json = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<LastAiDataDto>(json);
