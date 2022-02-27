@@ -16,3 +16,13 @@ C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Doma
 C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.dll
 C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.pdb
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\bin\Debug\netstandard2.1\BuildingBlocks.Domain.deps.json
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\bin\Debug\netstandard2.1\BuildingBlocks.Domain.dll
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\bin\Debug\netstandard2.1\BuildingBlocks.Domain.pdb
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.csproj.AssemblyReference.cache
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.AssemblyInfoInputs.cache
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.AssemblyInfo.cs
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.csproj.CoreCompileInputs.cache
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.dll
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Domain\obj\Debug\netstandard2.1\BuildingBlocks.Domain.pdb

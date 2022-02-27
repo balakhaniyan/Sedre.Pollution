@@ -17,6 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="EntityFramework" Version="6.4.4" />
         <PackageReference Include="Hangfire.AspNetCore" Version="1.8.0-beta4" />
         <PackageReference Include="Hangfire.SqlServer" Version="1.8.0-beta4" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
@@ -30,10 +31,10 @@
 
     <ItemGroup>
       <Reference Include="BuildingBlocks.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-        <HintPath>..\BuildingBlocks\BuildingBlocks.Domain\bin\Debug\netstandard2.1\BuildingBlocks.Domain.dll</HintPath>
+        <HintPath>..\BuildingBlocks\BuildingBlocks.Domain\bin\Debug\net5.0\BuildingBlocks.Domain.dll</HintPath>
       </Reference>
       <Reference Include="BuildingBlocks.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, ProcessorArchitecture=MSIL">
-        <HintPath>..\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Debug\netstandard2.1\BuildingBlocks.Infrastructure.dll</HintPath>
+        <HintPath>..\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Debug\net5.0\BuildingBlocks.Infrastructure.dll</HintPath>
       </Reference>
     </ItemGroup>
 

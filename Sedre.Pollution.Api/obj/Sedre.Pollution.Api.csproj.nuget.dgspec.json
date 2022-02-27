@@ -1,34 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj": {}
+    "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj": {
+    "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj",
+        "projectUniqueName": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj",
         "projectName": "BuildingBlocks.Application",
-        "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj",
-        "packagesPath": "C:\\Users\\Behzad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\obj\\",
+        "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj",
+        "packagesPath": "C:\\Users\\MoRe\\.nuget\\packages\\",
+        "outputPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Behzad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MoRe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.sarmadins.ir/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj"
               }
             }
           }
@@ -40,8 +41,8 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Humanizer.Core.fa": {
               "target": "Package",
@@ -63,36 +64,37 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+    "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
+        "projectUniqueName": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
         "projectName": "BuildingBlocks.Domain",
-        "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
-        "packagesPath": "C:\\Users\\Behzad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\obj\\",
+        "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj",
+        "packagesPath": "C:\\Users\\MoRe\\.nuget\\packages\\",
+        "outputPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Behzad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MoRe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.sarmadins.ir/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -103,12 +105,16 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.1.1, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
             },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
@@ -126,39 +132,40 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
+    "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj",
+        "projectUniqueName": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj",
         "projectName": "BuildingBlocks.Infrastructure",
-        "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Behzad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\obj\\",
+        "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\MoRe\\.nuget\\packages\\",
+        "outputPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Behzad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MoRe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.sarmadins.ir/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
               }
             }
           }
@@ -170,8 +177,8 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -189,39 +196,40 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj": {
+    "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj",
+        "projectUniqueName": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj",
         "projectName": "Sedre.Pollution.Api",
-        "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj",
-        "packagesPath": "C:\\Users\\Behzad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Api\\obj\\",
+        "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Api\\Sedre.Pollution.Api.csproj",
+        "packagesPath": "C:\\Users\\MoRe\\.nuget\\packages\\",
+        "outputPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Behzad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MoRe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.sarmadins.ir/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj"
               }
             }
           }
@@ -239,6 +247,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.1.1, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
             },
             "Hangfire.AspNetCore": {
               "target": "Package",
@@ -291,41 +303,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj": {
+    "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj",
+        "projectUniqueName": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj",
         "projectName": "Sedre.Pollution.Application",
-        "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj",
-        "packagesPath": "C:\\Users\\Behzad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Application\\obj\\",
+        "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Application\\Sedre.Pollution.Application.csproj",
+        "packagesPath": "C:\\Users\\MoRe\\.nuget\\packages\\",
+        "outputPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Behzad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MoRe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.sarmadins.ir/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Application\\BuildingBlocks.Application.csproj"
               },
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj"
               },
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj"
               }
             }
           }
@@ -337,9 +350,13 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Hangfire.Core": {
               "target": "Package",
               "version": "[1.8.0-beta4, )"
@@ -364,39 +381,40 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj": {
+    "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj",
+        "projectUniqueName": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj",
         "projectName": "Sedre.Pollution.Domain",
-        "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj",
-        "packagesPath": "C:\\Users\\Behzad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Domain\\obj\\",
+        "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj",
+        "packagesPath": "C:\\Users\\MoRe\\.nuget\\packages\\",
+        "outputPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Behzad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MoRe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.sarmadins.ir/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
               }
             }
           }
@@ -408,8 +426,8 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -418,6 +436,10 @@
             "JetBrains.Annotations": {
               "target": "Package",
               "version": "[2021.1.0-eap01, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -431,45 +453,46 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj": {
+    "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj",
+        "projectUniqueName": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj",
         "projectName": "Sedre.Pollution.Infrastructure",
-        "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Behzad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\obj\\",
+        "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\Sedre.Pollution.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\MoRe\\.nuget\\packages\\",
+        "outputPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Behzad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MoRe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.1"
+          "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.sarmadins.ir/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Domain\\BuildingBlocks.Domain.csproj"
               },
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\BuildingBlocks\\BuildingBlocks.Infrastructure\\BuildingBlocks.Infrastructure.csproj"
               },
-              "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj": {
-                "projectPath": "C:\\Users\\Behzad\\Desktop\\Sedre\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj"
+              "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj": {
+                "projectPath": "G:\\WorkStation\\Forked\\Sedre.Pollution\\Sedre.Pollution.Domain\\Sedre.Pollution.Domain.csproj"
               }
             }
           }
@@ -481,8 +504,8 @@
         }
       },
       "frameworks": {
-        "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -504,11 +527,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

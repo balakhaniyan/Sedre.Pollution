@@ -1556,7 +1556,8 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "BuildingBlocks.Domain": "1.0.0",
-          "JetBrains.Annotations": "2021.1.0-eap01"
+          "JetBrains.Annotations": "2021.1.0-eap01",
+          "Microsoft.EntityFrameworkCore": "5.0.0"
         },
         "runtime": {
           "Sedre.Pollution.Domain.dll": {}

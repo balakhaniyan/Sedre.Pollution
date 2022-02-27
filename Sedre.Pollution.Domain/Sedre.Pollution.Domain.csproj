@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,6 +11,7 @@
     <ItemGroup>
         <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
         <PackageReference Include="JetBrains.Annotations" Version="2021.1.0-eap01" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
     </ItemGroup>
     
     <ItemGroup>

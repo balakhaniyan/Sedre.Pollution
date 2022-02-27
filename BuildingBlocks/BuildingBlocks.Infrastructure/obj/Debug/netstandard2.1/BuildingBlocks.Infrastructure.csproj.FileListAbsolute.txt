@@ -22,3 +22,16 @@ C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infr
 C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.csproj.CopyComplete
 C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.dll
 C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.pdb
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Debug\netstandard2.1\BuildingBlocks.Infrastructure.deps.json
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Debug\netstandard2.1\BuildingBlocks.Infrastructure.dll
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Debug\netstandard2.1\BuildingBlocks.Infrastructure.pdb
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Debug\netstandard2.1\BuildingBlocks.Domain.dll
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\bin\Debug\netstandard2.1\BuildingBlocks.Domain.pdb
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.csproj.AssemblyReference.cache
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.AssemblyInfoInputs.cache
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.AssemblyInfo.cs
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.csproj.CoreCompileInputs.cache
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.csproj.CopyComplete
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.dll
+G:\WorkStation\Sedre.Pollution\BuildingBlocks\BuildingBlocks.Infrastructure\obj\Debug\netstandard2.1\BuildingBlocks.Infrastructure.pdb

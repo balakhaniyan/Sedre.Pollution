@@ -10,3 +10,16 @@ C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\n
 C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.csproj.CopyComplete
 C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.dll
 C:\Users\Behzad\Desktop\Sedre\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.pdb
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\bin\Debug\netstandard2.1\Sedre.Pollution.Domain.deps.json
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\bin\Debug\netstandard2.1\Sedre.Pollution.Domain.dll
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\bin\Debug\netstandard2.1\Sedre.Pollution.Domain.pdb
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\bin\Debug\netstandard2.1\BuildingBlocks.Domain.dll
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\bin\Debug\netstandard2.1\BuildingBlocks.Domain.pdb
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.csproj.AssemblyReference.cache
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.AssemblyInfoInputs.cache
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.AssemblyInfo.cs
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.csproj.CoreCompileInputs.cache
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.csproj.CopyComplete
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.dll
+G:\WorkStation\Sedre.Pollution\Sedre.Pollution.Domain\obj\Debug\netstandard2.1\Sedre.Pollution.Domain.pdb
